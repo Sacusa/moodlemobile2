@@ -15,13 +15,13 @@
             <!-- Survey already done -->
             <section class="card padding" ng-if="survey.surveydone">
                 <p class="padding">{{ 'mma.mod_survey.surveycompletednograph' | translate }}</p>
-                <a class="button button-block" ng-href="{{moduleUrl}}" mm-link>{{ 'mma.mod_survey.results' | translate }}</a>
+                <a class="button button-block icon-right ion-share" ng-href="{{moduleUrl}}" mm-link>{{ 'mma.mod_survey.results' | translate }}</a>
             </section>
 
             <!-- Survey done in offline but not synchronized -->
             <section class="card padding" ng-if="hasOffline">
                 <p class="padding">{{ 'mm.core.hasdatatosync' | translate:{$a: moduleName} }}</p>
-                <button class="button button-block" ng-click="sync()">{{ 'mm.settings.synchronizenow' | translate }}</button>
+                <button class="button button-block icon-right ion-loop" ng-click="sync()">{{ 'mm.settings.synchronizenow' | translate }}</button>
             </section>
 
             <!-- Survey questions -->

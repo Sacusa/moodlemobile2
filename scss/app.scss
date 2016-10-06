@@ -49,3 +49,44 @@ $button-default-active-border: $positive;
   box-shadow: none;
   color: #fff;
 }
+
+/**
+ * my custom settings
+ */
+
+// profile name in the left bar
+.bar-side-menu {
+  background-color: #631A1D;
+}
+
+// top bar
+.bar-content {
+  background-color:#631A1D;
+}
+
+// buttons (example: dustbin button)
+.button.button-positive {
+  border-color: blue;
+  background-color: blue;
+  color: #fff;
+}
+
+// divider in the left menu bar
+.item-divider {
+  background-color: #F6F6F6;
+}
+
+// buttons in the left menu bar
+ion-side-menu li .item, ion-side-menu li.item {
+  background-color: #E1DED3;
+}
+
+// courses tab
+.mm-site_mm_courses section h2 span{
+  font-weight: bold;
+}
+
+// courses tab
+.mm-site_mm_courses .tabs-icon-left{
+  background-color: #e5bebe;
+}
