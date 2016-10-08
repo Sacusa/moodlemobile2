@@ -56,37 +56,47 @@ $button-default-active-border: $positive;
 
 // profile name in the left bar
 .bar-side-menu {
-  background-color: #631A1D;
+  background-color: #631a1d;
 }
 
 // top bar
 .bar-content {
-  background-color:#631A1D;
+  background-color:#631a1d;
 }
 
 // buttons (example: dustbin button)
 .button.button-positive {
   border-color: blue;
   background-color: blue;
-  color: #fff;
+  color: #ffffff;
 }
 
 // divider in the left menu bar
 .item-divider {
-  background-color: #F6F6F6;
+  background-color: #631a1d;
 }
 
 // buttons in the left menu bar
-ion-side-menu li .item, ion-side-menu li.item {
-  background-color: #E1DED3;
+ion-side-menu li .item {
+  background-color: #eae3d6;
 }
 
 // courses tab
-.mm-site_mm_courses section h2 span{
+.mm-site_mm_courses section h2 span {
   font-weight: bold;
 }
 
 // courses tab
-.mm-site_mm_courses .tabs-icon-left{
+.mm-site_mm_courses .tabs-icon-left {
   background-color: #e5bebe;
+}
+
+// big block buttons (example: in the participants tab)
+.button.button-block, .button.button-full {
+  border-color: red;
+}
+
+// for properties of font inside item-divider(s)
+.item-divider > .ng-binding {
+  color: #ffffff;
 }
