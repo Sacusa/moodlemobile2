@@ -54,49 +54,92 @@ $button-default-active-border: $positive;
  * my custom settings
  */
 
-// profile name in the left bar
+// color in the background of profile name
 .bar-side-menu {
-  background-color: #631a1d;
+  background-color: #631A1D;
 }
 
-// top bar
+// color on the top bar
 .bar-content {
-  background-color:#631a1d;
+  background-color:#631A1D;
 }
 
 // buttons (example: dustbin button)
 .button.button-positive {
-  border-color: blue;
-  background-color: blue;
-  color: #ffffff;
+  border-color: #EAE3D6;
+    background-color: #EAE3D6;
+     color: black;
 }
 
-// divider in the left menu bar
-.item-divider {
-  background-color: #631a1d;
+.button.button.button-block.ng-binding{
+  color:black;
 }
 
-// buttons in the left menu bar
+//button
+.button.button-block, .button.button-full {
+  border-color: #e8e1e1;
+  background-color: #e8e1e1;
+}
+
+
+.button.button.ng-binding.button-default{
+  border-color: #e8e1e1;
+  background-color: #e8e1e1;
+  color:black;
+}
+
+.button.button.ng-binding.button-positive{
+  border-color: #e8e1e1;
+  background-color: #e8e1e1;
+  color:black;
+}
+
+
+
+// color in the buttons on the left menu bar
 ion-side-menu li .item {
-  background-color: #eae3d6;
+  background-color: #EAE3D6;
 }
 
-// courses tab
-.mm-site_mm_courses section h2 span {
+// color in the divider on the left menu bar#e1ded3
+.item-divider {
+  background-color: #631A1D;
+}
+
+// color of font inside maroon divider
+.item-divider > .ng-binding {
+  color: white;
+}
+
+.item-divider h2 > .ng-binding {
+  color: white;
+}
+
+.mm-format-text > .ng-binding{
+  color:white;
+}
+
+// font in the courses tab
+.mm-site_mm_courses section h2 span{
   font-weight: bold;
 }
-
-// courses tab
-.mm-site_mm_courses .tabs-icon-left {
+// color in the courses tab
+.mm-site_mm_courses .tabs-icon-left{
+  background-color: #e5bebe;
+}
+// grades table
+.mma-grades-table .levelodd.b1b, .mma-grades-table .levelodd.b1l,.mma-grades-table .levelodd,.item.tabs.tabs-icon-left{
   background-color: #e5bebe;
 }
 
-// big block buttons (example: in the participants tab)
-.button.button-block, .button.button-full {
-  border-color: red;
+
+
+// hidden Help in side menu
+ion-content.has-side-menu-header.mm-sidemenu-menu li:nth-last-child(4) {
+   display: none;
 }
 
-// for properties of font inside item-divider(s)
-.item-divider > .ng-binding {
-  color: #ffffff;
-}
+//button font black
+ .mm-user-profile-handler > a{
+    color:black;
+ }

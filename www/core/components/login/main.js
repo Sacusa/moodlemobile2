@@ -40,12 +40,11 @@ angular.module('mm.core.login', [])
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
         controller: 'mmLoginSitesCtrl',
-        onEnter: function($mmLoginHelper, $mmSitesManager) {
-            // Skip this page if there are no sites yet.
-            $mmSitesManager.hasNoSites().then(function() {
+        onEnter:
+            function($mmLoginHelper, $mmSitesManager) {
+                // force the app to logout
                 $mmLoginHelper.goToAddSite();
-            });
-        }
+            }
     })
 
     .state('mm_login.site', {
