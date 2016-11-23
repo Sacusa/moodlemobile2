@@ -1,0 +1,78 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "net.tunts.webintent": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-customurlscheme": {
+            "URL_SCHEME": "moodlemobile",
+            "ANDROID_SCHEME": " ",
+            "ANDROID_HOST": " ",
+            "ANDROID_PATHPREFIX": "/",
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "ch.ti8m.documenthandler": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-zip": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "694767596569",
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        },
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "com.moodle.niituniversity"
+        }
+    }
+}

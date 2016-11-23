@@ -1,0 +1,141 @@
+/**
+ * This file will be the head of all the other SCSS files in the project.
+ *
+ * Use it to customise the look and feel of the app.
+ */
+
+// Colors.
+$positive: #387ef5;
+
+// Setting the default button to button-outline.
+$button-default-bg: transparent;
+$button-default-text: $positive;
+$button-default-border: $positive;
+$button-default-active-bg: $positive;
+$button-default-active-border: $positive;
+
+// The path to the font icons.
+$ionicons-font-path: "../lib/ionic/release/fonts" !default;
+
+// Include all of Ionic.
+@import "www/lib/ionic/scss/ionic";
+
+// Tmp fix until Ionic adds !default to $button-default-border and $button-default-active-border.
+$button-default-border: $positive;
+$button-default-active-border: $positive;
+.button, .button.button-light, .button.button-stable, .button.button-positive, .button.button-calm, .button.button-assertive, .button.button-balanced, .button.button-energized, .button.button-royal, .button.button-dark {
+  border-color: $button-default-border;
+  &.activated {
+    border-color: $button-default-active-border;
+  }
+}
+.button-clear, .button-clear.button-clear {
+  color: $button-default-border; }
+.button-outline, .button-outline.button-outline {
+  border-color: $button-default-border;
+  &.activated {
+    background-color: $button-default-border;
+  }
+}
+.button-icon {
+  border-color: transparent; }
+
+// Include all of Moodle Mobile.
+@import "www/build/mm.bundle.scss";
+
+// Setting the default button to button-outline.
+.button.active,
+.button.activated {
+  box-shadow: none;
+  color: #fff;
+}
+
+/**
+ * my custom settings
+ */
+
+// color in the background of profile name
+.bar-side-menu {
+  background-color: #631A1D;
+}
+
+// color on the top bar
+.bar-content {
+  background-color:#631A1D;
+}
+
+// buttons (example: dustbin button)
+.button.button-positive {
+  border-color: #EAE3D6;
+    background-color: #EAE3D6;
+     color: black;
+}
+
+.button.button.button-block.ng-binding{
+  color:black;
+}
+
+//button
+.button.button-block, .button.button-full {
+  border-color: #e8e1e1;
+  background-color: #e8e1e1;
+}
+
+.button.button.ng-binding.button-default{
+  border-color: #e8e1e1;
+  background-color: #e8e1e1;
+  color:black;
+}
+
+.button.button.ng-binding.button-positive{
+  border-color: #e8e1e1;
+  background-color: #e8e1e1;
+  color:black;
+}
+
+// color in the buttons on the left menu bar
+ion-side-menu li .item {
+  background-color: #EAE3D6;
+}
+
+// color in the divider on the left menu bar#e1ded3
+.item-divider {
+  background-color: #631A1D;
+}
+
+// color of font inside maroon divider
+.item-divider > .ng-binding {
+  color: white;
+}
+
+.item-divider h2 > .ng-binding {
+  color: white;
+}
+
+.mm-format-text > .ng-binding{
+  color:white;
+}
+
+// font in the courses tab
+.mm-site_mm_courses section h2 span{
+  font-weight: bold;
+}
+// color in the courses tab
+.mm-site_mm_courses .tabs-icon-left{
+  background-color: #e5bebe;
+}
+// grades table
+.mma-grades-table .levelodd.b1b, .mma-grades-table .levelodd.b1l,.mma-grades-table .levelodd,.item.tabs.tabs-icon-left{
+  background-color: #e5bebe;
+}
+
+// hidden Help in side menu
+ion-content.has-side-menu-header.mm-sidemenu-menu li:nth-last-child(4) {
+   display: none;
+}
+
+//button font black
+ .mm-user-profile-handler > a {
+    color:black;
+}
+
