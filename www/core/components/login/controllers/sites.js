@@ -46,20 +46,17 @@ angular.module('mm.core.login')
         var site = $scope.sites[index],
             sitename = site.sitename;
 
-        $mmText.formatText(sitename).then(function(sitename) {
-            $mmUtil.showConfirm($translate('mm.login.confirmdeletesite', {sitename: sitename})).then(function() {
-                $mmSitesManager.deleteSite(site.id).then(function() {
-                    $scope.sites.splice(index, 1);
-                    $mmSitesManager.hasNoSites().then(function() {
-                        // No sites left, go to add a new site state.
-                        $ionicHistory.nextViewOptions({disableBack: true});
-                        $mmLoginHelper.goToAddSite();
-                    });
-                }, function() {
-                    $log.error('Delete site failed');
-                    $mmUtil.showErrorModal('mm.login.errordeletesite', true);
-                });
+
+        $mmSitesManager.deleteSite(site.id).then(function() {
+            $scope.sites.splice(index, 1);
+            $mmSitesManager.hasNoSites().then(function() {
+                // No sites left, go to add a new site state.
+                $ionicHistory.nextViewOptions({disableBack: true});
+                $mmLoginHelper.goToAddSite();
             });
+        }, function() {
+            $log.error('Delete site failed');
+            $mmUtil.showErrorModal('mm.login.errordeletesite', true);
         });
     };
 
