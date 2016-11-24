@@ -49,11 +49,9 @@ angular.module('mm.core.login')
 
         $mmSitesManager.deleteSite(site.id).then(function() {
             $scope.sites.splice(index, 1);
-            $mmSitesManager.hasNoSites().then(function() {
-                // No sites left, go to add a new site state.
-                $ionicHistory.nextViewOptions({disableBack: true});
-                $mmLoginHelper.goToAddSite();
-            });
+            // No sites left, go to add a new site state.
+            $ionicHistory.nextViewOptions({disableBack: true});
+            $mmLoginHelper.goToAddSite();
         }, function() {
             $log.error('Delete site failed');
             $mmUtil.showErrorModal('mm.login.errordeletesite', true);
