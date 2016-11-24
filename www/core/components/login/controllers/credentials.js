@@ -22,7 +22,7 @@ angular.module('mm.core.login')
  * @name mmLoginCredentialsCtrl
  */
 .controller('mmLoginCredentialsCtrl', function($scope, $state, $stateParams, $mmSitesManager, $mmUtil, $ionicHistory, $mmApp,
-            $q, $mmLoginHelper, $translate, $mmContentLinksDelegate, $mmContentLinksHelper) {
+            $q, $mmLoginHelper, $translate, $mmContentLinksDelegate, $mmContentLinksHelper, $ionicModal) {
 
     $scope.siteurl = $stateParams.siteurl;
     $scope.credentials = {
@@ -134,5 +134,25 @@ angular.module('mm.core.login')
             modal.dismiss();
         });
     };
+    
+    // Get docs URL for help modal.
+    $mmUtil.getDocsUrl().then(function(docsurl) {
+        $scope.docsurl = docsurl;
+    });
 
+    // Setup help modal.
+    $ionicModal.fromTemplateUrl('core/components/login/templates/credentials-help.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function(helpModal) {
+        $scope.showHelp = function() {
+            helpModal.show();
+        };
+        $scope.closeHelp = function() {
+            helpModal.hide();
+        };
+        $scope.$on('$destroy', function() {
+            helpModal.remove();
+        });
+    });
 });
